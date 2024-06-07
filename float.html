@@ -43,6 +43,17 @@
         padding: 1rem;
 
       }
+      .img-container{
+        float: left;
+        width: 33.33%;
+        padding: 4px;
+        text-align: justify;
+      }
+      .clearfix::after{
+        content: "";
+        clear: both;
+        display: flex;
+      }
     </style>
 </head>
 <body>
@@ -51,11 +62,21 @@
            <h1><span>Hey</span>,Neural nexus lab <span>|</span><h1>
         </div>
        
-       <div class="div-2">
-        <img src="/img/Untitled.jpg" alt="">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ut dolor molestiae quasi maxime corrupti modi officia officiis, itaque vel fugit distinctio earum repellat ab eveniet alias aut odio. Sint.
-            ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ut dolor molestiae quasi maxime corrupti modi officia officiis, itaque vel fugit distinctio earum repellat ab eve facere. Excepturi quos sed harum nostrum in, impedit fugit earum hic consectetur nesciunt!</p>
-       </div>
+        <div class="clearfix">
+          <div class="img-container">
+          <img src="/img/Untitled.jpg" alt="Italy" style="width:100%">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+          </div>
+          <div class="img-container">
+          <img src="/img/images.jpg" alt="Forest" style="width:100%">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+          <div class="img-container">
+          <img src="/img/Untitled.jpg" alt="Mountains" style="width:100%">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+          
+        </div>
     
 </body>
 </html>
